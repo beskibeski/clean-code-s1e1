@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -10,7 +10,7 @@ body {
   display: block;
   text-align: right;
 }
-.caption img {
+.caption-img {
   width: 100%;
 }
 .caption .caption-link {
@@ -35,19 +35,20 @@ body {
 .to-do-new {
   display: flex;
 }
-ul {
+#to-do-done,
+#to-do-undone {
   margin: 0;
   padding: 0px;
 }
-li,
-h3 {
+.to-do-added-task,
+.to-do-title {
   list-style: none;
 }
-input,
-button {
+.to-do-task-input-text,
+.to-do-button {
   outline: none;
 }
-button {
+.to-do-button {
   background: none;
   border: 0px;
   color: #888;
@@ -56,12 +57,12 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.to-do-button:hover {
   color: #3a3a3a;
 }
 /* Heading */
-h3,
-label[for="to-do-new-task"] {
+.to-do-title,
+.to-do-task-label-new {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -70,7 +71,7 @@ label[for="to-do-new-task"] {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.to-do-task-input-text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -82,21 +83,21 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.to-do-task-input-text:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="to-do-new-task"] {
+.to-do-task-label-new {
   display: block;
   margin: 0 0 20px;
 }
-input#to-do-new-task {
+#to-do-new-task {
   width: 318px;
 }
 
 /* Task list */
-li {
+.to-do-added-task {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -104,47 +105,47 @@ li {
   justify-content: space-between;
   align-items: center;
 }
-li > * {
+.to-do-added-task > * {
   vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.to-do-added-task .to-do-task-input-check {
   margin: 0 10px;
 }
-li > label {
+.to-do-added-task .to-do-task-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-li >    input[type="text"] {
+.to-do-added-task .to-do-task-input-text {
   width: 226px;
 }
-button.to-do-button-delete img {
+.remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.to-do-button-delete img:hover {
+.remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#to-do-done label {
+#to-do-done .to-do-task-label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.to-do-added-task .to-do-task-input-text {
   display: none;
 }
 
-ul li.to-do-added-task-edit input[type=text] {
+.to-do-added-task-edit .to-do-task-input-text {
   display: inline-block;
   width: 224px;
 }
 
-ul li.to-do-added-task-edit label {
+.to-do-added-task-edit .to-do-task-label {
   display: none;
 }
