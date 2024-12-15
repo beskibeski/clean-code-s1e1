@@ -15,28 +15,28 @@
     >
   </head>
   <body class="body">
-    <div class="caption"><img class="caption-img" src="./eisenhower-matrix.jpg"><a class="caption-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></div>
-    <div class="to-do">
-      <p id="to-do-new-wrapper"><label for="to-do-new-task to-do-task-label to-do-task-label-new">Add Item</label>
-        <div class="to-do-new">
+    <nav class="caption"><img class="caption-img" src="./eisenhower-matrix.jpg"><a class="caption-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a></nav>
+    <section class="to-do">
+      <div id="to-do-new-wrapper"><label for="to-do-new-task to-do-task-label to-do-task-label-new">Add Item</label>
+        <article class="to-do-new">
           <input
             id="to-do-new-task"
             class="to-do-task to-do-task-input-text"
             type="text"
           >
           <button class="to-do-button">Add</button>
-        </div>
-      </p>
+        </article>
+      </div>
       <h3 class="to-do-title">Todo</h3>
-      <ul id="to-do-undone">
-        <li class="to-do-added-task">
+      <article id="to-do-undone">
+        <div class="to-do-added-task">
           <input type="checkbox" class="to-do-task-input-check">
           <label class="to-do-task to-do-task-label">Pay Bills</label>
           <input type="text" class="to-do-task to-do-task-input-text">
           <button class="to-do-button to-do-button-edit">Edit</button>
           <button class="to-do-button to-do-button-delete"><img class="remove-img" src="./remove.svg"></button>
-        </li>
-        <li class="to-do-added-task to-do-added-task-edit">
+        </div>
+        <div class="to-do-added-task to-do-added-task-edit">
           <input type="checkbox" class="to-do-task-input-check">
           <label class="to-do-task to-do-task-label">Go Shopping</label>
           <input
@@ -46,19 +46,19 @@
           >
           <button class="to-do-button to-do-button-edit">Save</button>
           <button class="to-do-button to-do-button-delete"><img class="remove-img" src="./remove.svg"></button>
-        </li>
-      </ul>
+        </div>
+      </article>
       <h3 class="to-do-title">Completed</h3>
-      <ul id="to-do-done">
-        <li class="to-do-added-task">
+      <article id="to-do-done">
+        <div class="to-do-added-task">
           <input type="checkbox" class="to-do-task-input-check"checked>
           <label class="to-do-task to-do-task-label">See the Doctor</label>
           <input type="text" class="to-do-task to-do-task-input-text">
           <button class="to-do-button to-do-button-edit">Edit</button>
           <button class="to-do-button to-do-button-delete"><img class="remove-img" src="./remove.svg"></button>
-        </li>
-      </ul>
-    </div>
+        </div>
+      </article>
+    </section>
     <script src="app.js"></script>
   </body>
 </html>
