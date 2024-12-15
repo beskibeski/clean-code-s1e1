@@ -1,4 +1,17 @@
 /* Basic Style */
+@font-face {
+  font-family: "1 Papyrus";
+  src: url("fonts/1-papyrus/1-papyrus.eot");
+  src: url("fonts/1-papyrus/1-papyrus.eot?#iefix") format("embedded-opentype"),
+    url("fonts/1-papyrus/1-papyrus.otf") format("opentype"),
+    url("fonts/1-papyrus/1-papyrus.svg") format("svg"),
+    url("fonts/1-papyrus/1-papyrus.ttf") format("truetype"),
+    url("fonts/1-papyrus/1-papyrus.woff") format("woff"),
+    url("fonts/1-papyrus/1-papyrus.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .body {
   background-color: #f8f8f8;
   color: #333;
@@ -17,7 +30,7 @@
 }
 
 .caption .caption__link {
-  font-family: fantasy, cursive;
+  font-family: "1 Papyrus", cursive;
 }
 
 @media (max-width: 768px) {
@@ -36,6 +49,11 @@
   width: 56%;
   display: inline-block;
   flex-grow: 1;
+}
+
+#to-do__new-wrapper {
+  margin-block-start: 1em;
+  margin-block-end: 1em;
 }
 
 .to-do__new {
